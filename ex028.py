@@ -1,8 +1,10 @@
 import random
-n = int(input('Tenta advinhar um numero de 0 a 5!'))
+print('Vou pensar em um numero entre 0 e 5. tente adivinhar...')
+n = int(input('Em que numero eu pensei?'))
+print('Processando...')
 n1 = random.randint(0,5)
 if n == n1:
-    print('Você acertou!')
+    print('Você acertou, eu pensei no numero {}'.format(n1))
 else:
-    print('Você errou!')
+    print('Você errou, eu pensei no numero {}'.format(n1))
 print('Fim do jogo')
